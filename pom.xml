@@ -26,7 +26,7 @@
   </parent>  
 
   <artifactId>indoqa-spring</artifactId>
-  <version>4.1.0.0-SNAPSHOT</version>
+  <version>4.1.0</version>
   
   <name>Indoqa Spring</name>
   <description>Utilities for the Spring framework</description>
@@ -159,6 +159,7 @@
   <scm>
     <connection>scm:git:git@github.com:Indoqa/indoqa-spring.git</connection>
     <developerConnection>scm:git:git@github.com:Indoqa/indoqa-spring.git</developerConnection>
+    <tag>indoqa-spring-4.1.0</tag>
   </scm>
 </project>
 
