@@ -17,22 +17,22 @@
 package com.indoqa.spring;
 
 /**
- * Interface for defining a service with an attached priority.<br/>
- * <br/>
+ * Interface for defining a service with an attached priority.<br>
+ * <br>
  * This is useful when implementing a Chain of Responsibility pattern like structure when the actual number and/or type of elements is
- * not predetermined.<br/>
+ * not predetermined.<br>
  * The priority of the service is then used to bring all service elements into proper order.
- * 
+ *
  * This interface can be used with the {@link com.indoqa.spring.AbstractBeanList AbstractBeanList}
  */
 public interface PrioritizedService {
 
     /**
-     * Get the priority for this service.<br/>
-     * <br/>
-     * <b>Lower values mean higher priority!</b><br/>
+     * Get the priority for this service.<br>
+     * <br>
+     * <b>Lower values mean higher priority!</b><br>
      * Negative values as valid!
-     * 
+     *
      * @return The priority of this service.
      */
     int getPriority();

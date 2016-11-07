@@ -76,12 +76,12 @@ public class ClassPathScanner {
     /**
      * Find classes in the current class path that match the given <code>typeFilter</code> and reside in the given
      * <code>packages</code>.
-     * 
+     *
      * @param typeFilter The {@link TypeFilter} a class must satisfy to be considered.
      * @param packages The packages to look for classes in. At least one is required!
-     * 
+     *
      * @return The classes matching the given parameters.
-     * 
+     *
      * @throws IOException If reading resources or loading classes failed.
      */
     public Set<Class<?>> findClasses(TypeFilter typeFilter, String... packages) throws IOException {
@@ -99,16 +99,16 @@ public class ClassPathScanner {
     }
 
     /**
-     * Finds files in the current class path that match the given <code>filePattern</code>.<br/>
+     * Finds files in the current class path that match the given <code>filePattern</code>.<br>
      * The patterns supports Ant-style wildcards. See {@link org.springframework.core.io.support.PathMatchingResourcePatternResolver
-     * PathMatchingResourcePatternResolver} for details.<br/>
-     * <br/>
+     * PathMatchingResourcePatternResolver} for details.<br>
+     * <br>
      * The result may contain files packaged inside JAR files!
-     * 
+     *
      * @param filePattern The pattern that a file must satisfy to be considered.
-     * 
+     *
      * @return The files matching the given patterns.
-     * 
+     *
      * @throws IOException If reading resources failed.
      */
     public Set<URL> findFiles(String... filePattern) throws IOException {

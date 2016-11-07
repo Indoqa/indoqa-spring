@@ -18,7 +18,11 @@ package com.indoqa.spring;
 
 import static com.indoqa.lang.util.GenericsUtils.getGenericParameter;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
@@ -26,12 +30,12 @@ import javax.inject.Inject;
 import org.springframework.context.ApplicationContext;
 
 /**
- * The AbstractBeanList collects all Spring beans that are of the same type as its generic type <code>T</code>.<br/>
- * <br/>
+ * The AbstractBeanList collects all Spring beans that are of the same type as its generic type <code>T</code>.<br>
+ * <br>
  * If <code>T</code> is of type {@link PrioritizedService} then the collected beans will be sorted according to their priority.
- * Otherwise the beans will be in no particular order.<br/>
+ * Otherwise the beans will be in no particular order.<br>
  * {@link #sortBeans(List)} can be overridden to provide a custom sort algorithm.
- * 
+ *
  * @param <T> The type of beans to collect. Either an interface or a class.
  */
 public abstract class AbstractBeanList<T> implements Iterable<T> {
