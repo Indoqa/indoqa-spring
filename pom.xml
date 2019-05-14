@@ -150,6 +150,7 @@
         <configuration>
           <excludes>
             <exclude>**/test-resources/*.*</exclude>
+            <exclude>CHANGELOG.md</exclude>
           </excludes>
         </configuration>
       </plugin>    
